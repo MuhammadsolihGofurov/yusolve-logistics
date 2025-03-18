@@ -1,6 +1,7 @@
+import Link from "next/link";
 import React from "react";
 
-export default function About() {
+export default function About({ isAbout = false }) {
   return (
     <section
       id="about"
@@ -31,12 +32,18 @@ export default function About() {
             dignissimos corrupti dicta veniam id labore nemo, vitae adipisci ab
             veritatis minus!
           </p>
-          <button
-            type="button"
-            className="px-7 py-3 text-sm font-semibold uppercase bg-dark rounded-lg text-white hover:bg-main hover:text-dark transition-all duration-150"
-          >
-            Read more
-          </button>
+          {isAbout ? (
+            <></>
+          ) : (
+            <Link href={"/about"}>
+              <button
+                type="button"
+                className="px-7 py-3 text-sm font-semibold uppercase bg-dark rounded-lg text-white hover:bg-main hover:text-dark transition-all duration-150"
+              >
+                Read more
+              </button>
+            </Link>
+          )}
         </div>
         <div className="rounded-3xl overflow-hidden">
           <img

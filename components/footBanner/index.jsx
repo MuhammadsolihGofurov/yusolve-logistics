@@ -1,76 +1,39 @@
-// import React, { useEffect } from "react";
-
-// export default function Solutions() {
-
-//   return (
-//     <div
-//       id="solutions"
-//       className="py-10 lg:py-20 bg-dark"
-//       style={{ background: "url(/images/bg-white.png) #18344a center/cover" }}
-//     >
-//       <div className="container"></div>
-//     </div>
-//   );
-// }
 "use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/animete";
 import Link from "next/link";
-import { GridBack } from "../Layout/grid-back";
+import { Consultation } from "..";
 
-export default function Solutions() {
-  const data = [
-    {
-      id: 1,
-      title: "Our solutions 1",
-    },
-    {
-      id: 2,
-      title: "Our solutions 2",
-    },
-    {
-      id: 3,
-      title: "Our solutions 3",
-    },
-    {
-      id: 4,
-      title: "Our solutions 4",
-    },
-    {
-      id: 5,
-      title: "Our solutions 5",
-    },
-    {
-      id: 6,
-      title: "Our solutions 6",
-    },
-  ];
-
+export default function FootBanner() {
   return (
     <LampContainer>
-      <h1 className="mt-5 text-white py-4 text-center text-4xl font-medium md:text-4xl">
-        Our solutions
-      </h1>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 2xl:gap-10 pt-20 solutions-container">
-        {data?.map((item, index) => {
-          return (
-            <Link href={`/solutions/${item?.id}`} key={index}>
-              <a
-                role="link"
-                className="solution-card flex flex-col items-start justify-end w-full rounded-3xl overflow-hidden min-h-[300px] sm:min-h-[400px] relative bg-cover bg-center transition-all duration-300 group p-7 border border-transparent hover:border-white z-0"
-                style={{ backgroundImage: "url(/images/main.png)" }}
-              >
-                <h2 className="z-10 text-white text-xl sm:text-2xl font-semibold absolute -bottom-full group-hover:bottom-7 transition-all duration-150">
-                  {item?.title}
-                </h2>
-
-                <div className="w-full h-full absolute solution-card-hover bg-dark top-0 left-0 z-[-1] bg-opacity-5 backdrop-blur-sm rounded-3xl"></div>
-              </a>
-            </Link>
-          );
-        })}
-      </div>
+      <motion.h1
+        // initial={{ opacity: 0, y: 100 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{
+        //   delay: 0.3,
+        //   duration: 0.8,
+        //   ease: "easeInOut",
+        // }}
+        className="mt-8 bg-gradient-to-br from-white to-[#4e99d2] py-4 bg-clip-text text-center text-3xl tracking-tight text-transparent md:text-5xl font-semibold z-10 relative"
+      >
+        Ready to Optimize <br /> Your Trucking Business ?
+      </motion.h1>
+      <motion.p
+        // initial={{ opacity: 0, y: 100 }}
+        // whileInView={{ opacity: 1, y: 0 }}
+        // transition={{
+        //   delay: 0.3,
+        //   duration: 0.8,
+        //   ease: "easeInOut",
+        // }}
+        className="text-gray-300 pt-3 pb-7 text-base sm:text-lg text-center"
+      >
+        Take the first step towards a more efficiend and profitable operation
+        with YUSOLVE.
+      </motion.p>
+      <Consultation />
     </LampContainer>
   );
 }
@@ -84,7 +47,7 @@ export const LampContainer = ({ children, className }) => {
         className
       )}
     >
-      <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+      <div className="relative flex flex-1 scale-y-105 sm:scale-y-125 w-full items-center justify-center isolate z-0 ">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}

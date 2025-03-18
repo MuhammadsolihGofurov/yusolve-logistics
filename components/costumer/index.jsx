@@ -6,7 +6,7 @@ export default function Costumer() {
       id="costumer"
       className="bg-dark pb-10 lg:pb-20 pt-5 sm:pt-0 relative z-0 lamp__container"
     >
-      <div className="container flex flex-col items-center justify-center gap-10">
+      <div className="container flex flex-col items-center justify-center gap-10 relative z-10">
         <div className="flex flex-col lg:w-6/12 gap-5 text-white text-center">
           <h1 className="text-2xl lg:text-4xl font-semibold">
             <span className="text-blue-400">Loved</span> by businesses <br />{" "}

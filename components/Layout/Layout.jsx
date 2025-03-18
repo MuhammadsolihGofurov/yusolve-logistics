@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Footer, Header, Scripts } from "../../components";
 import useSWR from "swr";
 import fetcher from "../../utils/fetcher";
+import SendModal from "../contact/send-modal";
 
 const Layout = ({ children }) => {
   // const { data: settings } = useSWR("/settings", fetcher);
@@ -64,7 +65,7 @@ const Layout = ({ children }) => {
         })}
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
@@ -87,12 +88,14 @@ const Layout = ({ children }) => {
         </div>
       </div>
 
+      <SendModal />
+
       {/* Nav Bottom */}
       {/* <NavBottom /> */}
 
       {/* Scripts */}
-      <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></Script>
-      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></Script>
+      {/* <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></Script> */}
+      {/* <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></Script> */}
 
       {/* {settings && <Scripts settings={settings} />} */}
     </>

@@ -12,3 +12,8 @@ export { default as Banner } from "./banner";
 export { default as Solutions } from "./solutions";
 export { default as About } from "./about";
 export { default as Costumer } from "./costumer";
+
+export { default as Breadcrumbs } from "./breadcrumbs";
+export { default as Teams } from "./about/teams";
+export { default as FootBanner } from "./footBanner";
+export { default as Consultation } from "./button/consultation";

@@ -1,4 +1,5 @@
 import React from "react";
+import { Consultation } from "..";
 
 export default function Banner() {
   return (
@@ -15,12 +16,7 @@ export default function Banner() {
           Encouarging and supporting transportation enterpreneurs, just for over
           20 years !
         </p>
-        <button
-          type="button"
-          className="px-7 py-3 font-semibold uppercase bg-white bg-opacity-5 backdrop-blur-lg border border-white rounded-lg text-white hover:bg-white hover:text-dark transition-all duration-150"
-        >
-          Get a free consultation
-        </button>
+        <Consultation />
       </div>
     </section>
   );
