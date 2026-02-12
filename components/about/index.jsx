@@ -17,22 +17,28 @@ export default function About({ isAbout = false }) {
             About Yusolve Solutions
           </h2>
           <p className="py-7">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repellendus alias quae dolores similique facilis officia cupiditate
-            voluptatibus? Voluptatibus quam ipsam saepe id dolorem magni
-            voluptate voluptatum reiciendis tenetur! <br />
+            YUSOLVE is a trusted partner for trucking companies across the
+            United States, providing professional safety and compliance
+            solutions in full accordance with FMCSA regulations.
             <br />
-            Illo blanditiis obcaecati assumenda et, aperiam necessitatibus aut
-            ipsam optio maxime numquam ad, quisquam sunt harum. Animi, pariatur
-            impedit repellat soluta eius facere error dolorum adipisci vel amet
-            eaque corporis necessitatibus. Cum numquam repellat, porro alias
-            sint quod reprehenderit, temporibus optio quaerat, maiores harum
-            voluptatem error eum. Ducimus rem unde doloremque deserunt sint
-            alias repellendus nisi perspiciatis illum tenetur repudiandae
-            dignissimos corrupti dicta veniam id labore nemo, vitae adipisci ab
-            veritatis minus!
+            We help carriers navigate the complexities of federal safety
+            requirements, reduce risks, and maintain strong compliance records.
+            Our mission is to protect your authority, improve your CSA scores,
+            and ensure your business operates smoothly and confidently in a
+            highly regulated industry.
+            <br />
+            Our services include driver qualification file (DQF) management, DOT
+            audit preparation, safety monitoring, violation prevention, and
+            ongoing compliance support tailored to your company’s needs. We work
+            closely with owners, safety managers, and dispatch teams to build
+            sustainable safety systems that support long-term growth.
+            <br />
+            At YUSOLVE, we don’t just fix problems — we prevent them. With
+            industry expertise, hands-on support, and a proactive approach, we
+            help trucking companies stay compliant, reduce stress, and focus on
+            what matters most: running a successful operation.
           </p>
-          {isAbout ? (
+          {/* {isAbout ? (
             <></>
           ) : (
             <Link href={"/about"}>
@@ -43,7 +49,7 @@ export default function About({ isAbout = false }) {
                 Read more
               </button>
             </Link>
-          )}
+          )} */}
         </div>
         <div className="rounded-3xl overflow-hidden">
           <img

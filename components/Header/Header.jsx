@@ -29,28 +29,37 @@ export default function Header() {
                 <Link href="#">
                   <a
                     href="#"
-                    title="Solutions"
+                    title="Safety"
                     className="font-medium hover:text-main p-2"
                   >
-                    Solutions 1
+                    Safety
                   </a>
                 </Link>
                 <Link href="#">
                   <a
                     href="#"
-                    title="Solutions"
+                    title="Fleet"
                     className="font-medium hover:text-main p-2"
                   >
-                    Solutions 1
+                    Fleet
                   </a>
                 </Link>
                 <Link href="#">
                   <a
                     href="#"
-                    title="Solutions"
+                    title="HR"
                     className="font-medium hover:text-main p-2"
                   >
-                    Solutions 1
+                    HR
+                  </a>
+                </Link>
+                <Link href="#">
+                  <a
+                    href="#"
+                    title="Insurance"
+                    className="font-medium hover:text-main p-2"
+                  >
+                    Insurance
                   </a>
                 </Link>
               </div>

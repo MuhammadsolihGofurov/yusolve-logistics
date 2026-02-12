@@ -23,27 +23,19 @@ export default function Solutions() {
   const data = [
     {
       id: 1,
-      title: "Our solutions 1",
+      title: "Safety",
     },
     {
       id: 2,
-      title: "Our solutions 2",
+      title: "Fleet",
     },
     {
       id: 3,
-      title: "Our solutions 3",
+      title: "HR",
     },
     {
       id: 4,
-      title: "Our solutions 4",
-    },
-    {
-      id: 5,
-      title: "Our solutions 5",
-    },
-    {
-      id: 6,
-      title: "Our solutions 6",
+      title: "Insurance",
     },
   ];
 
