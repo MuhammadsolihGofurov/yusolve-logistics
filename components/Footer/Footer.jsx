@@ -29,17 +29,17 @@ export default function Footer() {
               New Castle, DE 19720 <br />
               Phone:{" "}
               <a
-                href="tel:(513) 653-3364"
+                href="tel:+1 216 377 1111"
                 className="hover:text-main transition-colors duration-150"
               >
-                (513) 653-3364
+                +1 216 377 1111
               </a>{" "}
               <br />
               <a
-                href="mailto:biling@yusolve.com"
+                href="mailto:yusolvellc@gmail.com"
                 className="hover:text-main transition-colors duration-150"
               >
-                biling@yusolve.com
+                yusolvellc@gmail.com
               </a>
             </p>
           </div>
