@@ -24,18 +24,22 @@ export default function Solutions() {
     {
       id: 1,
       title: "Safety",
+      image: "/images/truck-1.jpg",
     },
     {
       id: 2,
       title: "Fleet",
+      image: "/images/truck-2.jpg",
     },
     {
       id: 3,
       title: "HR",
+      image: "/images/truck-6.jpg",
     },
     {
       id: 4,
       title: "Insurance",
+      image: "/images/truck-5.jpg",
     },
   ];
 
@@ -51,7 +55,7 @@ export default function Solutions() {
               <a
                 role="link"
                 className="solution-card flex flex-col items-start justify-end w-full rounded-3xl overflow-hidden min-h-[300px] sm:min-h-[400px] relative bg-cover bg-center transition-all duration-300 group p-7 border border-transparent hover:border-white z-0"
-                style={{ backgroundImage: "url(/images/main.png)" }}
+                style={{ backgroundImage: `url(${item?.image})` }}
               >
                 <h2 className="z-10 text-white text-xl sm:text-2xl font-semibold absolute -bottom-full group-hover:bottom-7 transition-all duration-150">
                   {item?.title}
@@ -73,7 +77,7 @@ export const LampContainer = ({ children, className }) => {
       id="solutions"
       className={cn(
         "lamp__container relative flex flex-col items-center justify-center overflow-hidden bg-dark w-full z-0 pb-20 pt-[240px]",
-        className
+        className,
       )}
     >
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">

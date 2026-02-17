@@ -51,9 +51,9 @@ export default function About({ isAbout = false }) {
             </Link>
           )} */}
         </div>
-        <div className="rounded-3xl overflow-hidden">
+        <div className="rounded-3xl h-[350px] sm:h-[550px] overflow-hidden">
           <img
-            src="/images/main.png"
+            src="/images/truck-3.jpg"
             alt="main"
             title="main"
             loading="lazy"

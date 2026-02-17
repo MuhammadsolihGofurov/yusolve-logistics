@@ -143,9 +143,9 @@ export default function Form({ page = " Contact page" }) {
             </button>
           </div>
         </form>
-        <div className="rounded-3xl overflow-hidden">
+        <div className="rounded-3xl h-[350px] sm:h-[550px] overflow-hidden">
           <img
-            src="/images/main.png"
+            src="/images/truck-1.jpg"
             alt="main"
             title="main"
             loading="lazy"

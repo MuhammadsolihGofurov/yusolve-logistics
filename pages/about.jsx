@@ -39,7 +39,7 @@ function page({ info }) {
         description={`YUSOLVE is your trusted partner in trucking business solutions,
         providing comprehensive services to help you navigate the
         complexities of the industry`}
-        image={"/images/main.png"}
+        image={"/images/truck-8.jpg"}
       />
       <About isAbout={true}/>
       <Teams />

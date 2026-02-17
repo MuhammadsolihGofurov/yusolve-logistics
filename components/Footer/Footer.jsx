@@ -109,7 +109,7 @@ export default function Footer() {
         <div className="w-full bg-white bg-opacity-10 h-[1px] my-14"></div>
         <div className="flex items-center justify-between sm:flex-row flex-col text-center gap-5">
           <Socials />
-          <p>© Yusolve LLC. All rights reserved. 2024 - present</p>
+          <p>© Yusolve LLC. All rights reserved. 2026 - present</p>
         </div>
       </div>
     </footer>
